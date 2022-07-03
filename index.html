@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style sheet of Customize File links -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- style sheet of Bootstrap File links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <title>College Library Web Application</title>
+</head>
+
+<body>
+    <div id="message"></div>
+    <div class="container my-3">
+        <h1>Nauman Library</h1>
+        <hr />
+        <form id="libraryForm">
+            <div class="form-group row">
+                <label for="bookName" class="col-sm-2 col-form-label">Book Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bookName" placeholder="Book Name" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Author" class="col-sm-2 col-form-label">Author</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="author" placeholder="Author Name" />
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input type="radio" name="programming" id="fictions" class="form-check-input"
+                                value="fictions" />
+                            <label for="gridRadios1" class="form-check-label">Fictions</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="programming" id="programming" class="form-check-input"
+                                value="programming" />
+                            <label for="programming" class="form-check-label">Computer Programming</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="programming" id="cooking" class="form-check-input"
+                                value="cooking" />
+                            <label for="cooking" class="form-check-label">Cooking</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" id="button" class="btn btn-warning">Add Book</button>
+                </div>
+            </div>
+        </form>
+        <div class="table">
+            <h1 class="text-center" style="margin-bottom: 40px; font-family: verdana;font-weight: bolder;">My Books</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Book Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Type of Book</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- My customize js file link -->
+    <script src="app.js"></script>
+    <!-- Bootstrap JS Link Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

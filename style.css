@@ -1,0 +1,21 @@
+body {
+  background: skyblue;
+  color: black;
+}
+
+input:first-child {
+  margin-bottom: 20px;
+}
+
+input:first-child,
+input:last-child {
+  text-transform: capitalize;
+}
+
+tbody {
+  color: white;
+}
+
+#button {
+  margin-bottom: 30px;
+}
